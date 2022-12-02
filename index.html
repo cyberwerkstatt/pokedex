@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Pokedex</h1>
-    <button onclick="loadPokemon()">Load Pokemon Stats</button>
-    <input id="input" type="text" placeholder="Gib ein Pokemon ein">
-    <div id="container"></div>
-    <div id="stats"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <div class="header">
+        <img src="./img/pokeball.png">
+        <h1>Pokedex</h1>
+        <img src="./img/pokeball.png">
+    </div>
+    
+    <div class="button-container">
+        <input id="input" type="text" placeholder="Gib ein Pokemon ein">
+        <button onclick="loadPokemon()">Pokemon Stats</button>
+    </div>
+    
+    <div id="container" class="container"></div>
+    <div id="stats" class="stats"></div>
     
 </body>
 </html>
