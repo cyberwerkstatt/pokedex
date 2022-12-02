@@ -11,8 +11,17 @@ async function loadPokemon(){
     
     let pokeContainer = document.getElementById("container");
     pokeContainer.innerHTML = `
-    <div><h1>${responseAsJSON["name"]}</h1></div>
-    <img src="${pokePic}">
+        <div><h1>${responseAsJSON["name"]}</h1></div>
+        <img src="${pokePic}">
     `;
-    console.log("Loaded Pokemon:", responseAsJSON);
+
+    loadStats(responseAsJSON);
+    pokemon.value = "";
+}
+
+function loadStats(pokemon_stats){
+    let type = pokemon_stats["types"][0]["type"]["name"]
+    let stats_container = document.getElementById("stats");
+    stats_container.innerHTML += type;
+    console.log(pokemon_stats)
 }
