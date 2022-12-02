@@ -1,3 +1,4 @@
+
 .header {
     width: 100%;
     display: flex;
@@ -42,13 +43,30 @@
     outline: none;
 }
 
-.pokeName {
 
-}
 
 .stats {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: aqua;
+}
+.psych {
+    background-color: cornflowerblue;
+}
+.stone {
+    background-color: gray;
 }
