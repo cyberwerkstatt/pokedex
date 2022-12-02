@@ -23,8 +23,9 @@ async function loadPokemon(){
 
 function loadStats(pokemon_stats){
     let type = pokemon_stats["types"][0]["type"]["name"]
-    let special_attack = "";
+    let stats = pokemon_stats["stats"];
     let stats_container = document.getElementById("stats");
     stats_container.innerHTML = `<p>Type: ${type}</p>`;
-    console.log(pokemon_stats)
+    console.log(stats)
+
 }
