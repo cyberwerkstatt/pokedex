@@ -1,7 +1,7 @@
 
 async function loadPokemon(){
     let pokemon = document.getElementById("input").value;
-    let url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+    let url = `https://pokeapi.co/api/v2/pokemon/${pokemon.toLowerCase()}`;
     let response = await fetch(url);
     let responseAsJSON = await response.json();
     let pokePic = responseAsJSON["sprites"]["other"]["official-artwork"]["front_default"]
