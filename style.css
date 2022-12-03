@@ -42,9 +42,6 @@
     border-radius: 10px;
     outline: none;
 }
-
-
-
 .stats {
     display: flex;
     justify-content: center;
@@ -69,4 +66,37 @@
 }
 .stone {
     background-color: gray;
+}
+
+.detailStats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.allStats {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.subContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.stats-container {
+    border-radius: 15px;
+    width: 53vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
 }
