@@ -44,6 +44,15 @@ function statsContainerHTML(stat_name,stat_value){
             ${stat_name}:
             ${stat_value}
         </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Default striped example" style="width: ${stat_value}%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+
+
+      
+
+        
     </div>`;
 }
 
