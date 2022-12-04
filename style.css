@@ -1,6 +1,9 @@
 body {
     background-color: aqua !important;
+}
 
+h1 {
+    font-weight: bold !important;
 }
 
 .header {
@@ -26,6 +29,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 180px;
 }
 
 .button-container {
@@ -40,6 +44,11 @@ body {
 .button-container button {
     margin-top: 20px;
     border-radius: 10px;
+}
+
+#myBtn:hover {
+    background-color: #FECA1B;
+    transition: background-color 225ms ease-in-out;
 }
 
 #input {
@@ -57,10 +66,10 @@ body {
     background-color: green;
 }
 .yellow {
-    background-color: yellow;
+    background-color: rgb(185, 185, 35);
 }
 .red {
-    background-color: red;
+    background-color: rgb(194, 40, 40);
 }
 .blue {
     background-color: aqua;

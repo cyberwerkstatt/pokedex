@@ -19,8 +19,7 @@ function pokeContainerHTML(name,type,pokePic){
         <h2>Name: ${name.toUpperCase()}</h2>
         <h3>Type: ${type}</h3>
     </div>
-    <img src="${pokePic}">
-`
+    <img src="${pokePic}">`
 }
 
 function loadStats(pokemon_stats){
@@ -45,14 +44,8 @@ function statsContainerHTML(stat_name,stat_value){
             ${stat_value}
         </div>
         <div class="progress">
-            <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Default striped example" style="width: ${stat_value}%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-
-
-
-      
-
-        
+            <div class="progress-bar progress-bar-striped" role="progressbar" aria-label="Default striped example" style="width: ${stat_value}%" aria-valuenow="${stat_value} aria-valuemin="0" aria-valuemax="100"></div>
+        </div> 
     </div>`;
 }
 
